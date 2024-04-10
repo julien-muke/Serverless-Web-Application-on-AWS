@@ -43,6 +43,7 @@ function Quiz() {
       setIsCorrect(true);
     } else {
       setIsCorrect(false);
+      setIsCorrect(false);
     }
 
     // Delay moving to the next question to allow the user to see feedback
