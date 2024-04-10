@@ -13,12 +13,10 @@ In this project, you will build a serverless web application using AWS Lambda, D
 
 ## <a name="steps">☑️ Steps</a>
 
-* Set up environment
-* Create the React App
-* Add authentication with Cognito
-* Add functionality and styling for quiz
-* Push local code to GitHub
-* Host the front end in Amplify via GitHub (for CI/CD)
+* Create a DynamoDB table to store the items
+* Build a Lambda function to handle the CRUD operations on the DynamoDB table
+* Use S3 to store and host the web application's static files (HTML, CSS, and JavaScript)
+* Create a CloudFront distribution to serve the S3-hosted static files with low latency
 
 
 ## <a name="quick-start">🤸 Quick Start</a>
