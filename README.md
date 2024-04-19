@@ -56,8 +56,6 @@ After creating a bucket in Amazon S3, you're ready to upload an object to the bu
 
 4. Choose a file to upload, we are going to upload the code provided in this GitHub repo, file name: `index.html` `script.j` `style.css`, and then choose Open, and choose Upload.
 
-
-
 You've successfully uploaded an object to your bucket. 
 
 
