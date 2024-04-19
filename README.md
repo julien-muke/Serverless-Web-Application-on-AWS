@@ -94,5 +94,22 @@ Choose Public if the Amazon S3 bucket origin is publicly accessible.
 ![Screenshot 2024-04-11 at 18 46 31](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/e3153d79-22f4-49bb-9c5e-9600c97cf73d)
 
 
+7. You can use AWS WAF to protect your CloudFront distributions and origin servers. AWS WAF is a web application firewall that helps secure your web applications and APIs by blocking requests before they reach your servers.
+
+But for the sake of this tutorial, we'll keep it simple and not use AWS WAF, choose "Do not use security protection"
+
+![Screenshot 2024-04-11 at 18 50 10](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/77933474-9332-4eb3-bb2a-e17e394aac1d)
+
+8. After CloudFront creates your distribution, the value of the `Status` column for your distribution will change from `Deploying` to the date and time that the distribution is deployed. If you chose to enable the distribution, it will be ready to process requests at this time. 
+
+![Screenshot 2024-04-18 at 14 43 19](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/97e93837-2b6f-4b36-921a-09fde5902db2)
+
+
+9. When your distribution is deployed, confirm that you can access your content using your new CloudFront URL or CNAME. For more information, see Testing a distribution.
+
+
+
+
+
 
 
