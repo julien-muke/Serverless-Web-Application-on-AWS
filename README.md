@@ -73,7 +73,25 @@ To create a distribution:
 ![Screenshot 2024-04-11 at 18 40 59](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/60a5384f-1a8a-4621-b20a-954724e3a403)
 
 
-3. 
+3. The origin domain is the DNS domain name of the Amazon S3 bucket or HTTP server from which you want CloudFront to get objects for this origin, for example: Amazon S3 bucket – DOC-EXAMPLE-BUCKET.s3.us-west-2.amazonaws.com 
+
+We've created an S3 bucket earlier called `jmwebapp`. Our origin domain is going to be `jmwebapp.s3.us-east-1.amazonaws.com`
+
+4. Origin path is optional, we will keep that as default.
+
+![CloudFront-Global(3)(1)](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/ba422e1c-33b1-4641-b3ca-22aa6a64444b)
+
+
+5. Choose Origin access control settings (recommended) if you want to make it possible to restrict access to an Amazon S3 bucket origin to only specific CloudFront distributions.
+
+Choose Public if the Amazon S3 bucket origin is publicly accessible.
+
+
+![Screenshot 2024-04-11 at 18 45 58](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/2f9949af-03ab-41e9-ac9d-d0c3fc4f2126)
+
+6. Create a Origin Access Control  - OAC
+
+![Screenshot 2024-04-11 at 18 46 31](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/e3153d79-22f4-49bb-9c5e-9600c97cf73d)
 
 
 
