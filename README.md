@@ -123,7 +123,10 @@ Next, you need to copy the S3 Bucket policy, which you need to attach to your bu
 ![Screenshot 2024-04-18 at 14 48 31](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/5fc36379-96df-4b72-b36e-99900248802e)
 
 
+* Go back to your S3 Bucket and select the bucket where you have you know stored everything.
+* Go to permission Tab, under permission you will see "Bucket policy", select that and click "Edit"
 
+![Screenshot 2024-04-18 at 14 52 19](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/b57ba7b0-c396-49f3-85df-777a923dd6fc)
 
 
 
