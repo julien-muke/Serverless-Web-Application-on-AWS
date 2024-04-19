@@ -54,12 +54,27 @@ After creating a bucket in Amazon S3, you're ready to upload an object to the bu
 
 3. Under Files and folders, choose Add files.
 
-4. Choose a file to upload, we are going to upload the code provided in this GitHub repo, file name: `index.html` `script.j` `style.css`, and then choose Open, and choose Upload.
+4. Choose a file to upload, we are going to upload the code provided in this GitHub repo, file name: `index.html` `script.js` `style.css`, and then choose Open, and choose Upload.
 
 ![Screenshot 2024-04-12 at 11 34 37](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/30b21caa-5a6e-4f37-8e36-4a2e0333625e)
 
 
 You've successfully uploaded an object to your bucket. 
+
+➡️ Step 2 - Create a CloudFront distribution
+
+CloudFront delivers your content through a worldwide network of data centers called edge locations. When a user requests content that you're serving with CloudFront, the request is routed to the edge location that provides the lowest latency (time delay), so that content is delivered with the best possible performance.
+
+To create a distribution:
+
+1. On Console and open the CloudFront console at https://console.aws.amazon.com/cloudfront/v4/home.
+2. In the navigation pane, choose Distributions, then choose Create distribution.
+
+![Screenshot 2024-04-11 at 18 40 59](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/60a5384f-1a8a-4621-b20a-954724e3a403)
+
+
+3. 
+
 
 
 
