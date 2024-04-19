@@ -19,7 +19,7 @@ In this project, you will build a serverless web application using AWS Lambda, D
 * Create a CloudFront distribution to serve the S3-hosted static files with low latency
 
 
-➡️ Step 1 - Create an Amazon S3 Bucket
+## ➡️ Step 1 - Create an Amazon S3 Bucket
 
 First, you need to create an Amazon S3 bucket where you will store your objects.
 
@@ -61,7 +61,7 @@ After creating a bucket in Amazon S3, you're ready to upload an object to the bu
 
 You've successfully uploaded an object to your bucket. 
 
-➡️ Step 2 - Create a CloudFront distribution
+## ➡️ Step 2 - Create a CloudFront distribution
 
 CloudFront delivers your content through a worldwide network of data centers called edge locations. When a user requests content that you're serving with CloudFront, the request is routed to the edge location that provides the lowest latency (time delay), so that content is delivered with the best possible performance.
 
