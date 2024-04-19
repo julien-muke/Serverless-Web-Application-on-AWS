@@ -155,5 +155,15 @@ I have a domain name `julienmuke.cloud` form Hostinger (https://www.hostinger.co
 
 1. Let's Create Hosted Zone
 
-A hosted Zone one tells Route 53 how to respond to DNS queries for a domain such as example.com or julienmuke.cloud
+A hosted Zone one tells Route 53 how to respond to DNS queries for a domain such as example.com or julienmuke.cloud.
 
+* Back to your console navigate to AWS Route 53, choose Hosted zones in the navigation pane
+
+![Screenshot 2024-04-18 at 15 12 56](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/53fa6a00-e1bb-46cc-94ba-3a0c2f8abdce)
+
+
+* In the Create Hosted Zone pane, enter the name of the domain that you want to route traffic for, i'll use `julienmuke.cloud`. 
+* For Type, accept the default value of Public Hosted Zone (if its VPC only then you can select private hosted Zone).
+
+
+![Route-53-Global](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/597c2b2e-dbe7-4c6e-921c-a606e6600694)
