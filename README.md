@@ -175,6 +175,6 @@ A hosted Zone one tells Route 53 how to respond to DNS queries for a domain such
 ![Screenshot 2024-04-18 at 15 30 31](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/1500e362-6f75-40bd-a616-c3277424f6f3)
 
 
-* Navigate to your Cpanel, search for "Manage domain" or something similar to that, then change the "DNS/Nameservers"
+* Navigate to your Cpanel, search for "Manage domain" or something similar to that, then change the "DNS/Nameservers" paste the name servers from AWS Route 53 Hosted Zones.
 
 ![Screenshot 2024-04-18 at 15 32 11](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/cd49d101-fbdf-418c-8dd0-0e1d569191df)
