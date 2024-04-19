@@ -19,82 +19,30 @@ In this project, you will build a serverless web application using AWS Lambda, D
 * Create a CloudFront distribution to serve the S3-hosted static files with low latency
 
 
-## <a name="snippets">🕸️ Code Snippets</a>
+➡️ Step 1 - Create an Amazon S3 Bucket
 
-<details>
-<summary><code>Quiz.js</code></summary>
+First, you need to create an Amazon S3 bucket where you will store your objects.
 
-```javascript
-import React, { useState } from 'react';
-import quizData from './quizData';
+1. Sign in to the AWS Management Console and open the Amazon S3 console at https://console.aws.amazon.com/s3/
+2. In the navigation bar on the top of the page, choose the name of the currently displayed AWS Region. Next, choose the Region in which you want to create a bucket. 
+3. In the left navigation pane, choose Buckets.
+4. Choose Create bucket.
 
-function Quiz() {
-  const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [score, setScore] = useState(0);
-  const [showScore, setShowScore] = useState(false);
-  const [selectedAnswer, setSelectedAnswer] = useState(""); 
-  const [isCorrect, setIsCorrect] = useState(null);
+![Screenshot 2024-04-11 at 18 24 10](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/d97d4214-bcb5-4d90-a4f6-cdc3410f095f)
 
-  const handleAnswerOptionClick = (option) => {
-    const correctAnswer = quizData[currentQuestion].answer;
-    setSelectedAnswer(option);
-    if (option === correctAnswer) {
-      setScore(score + 1);
-      setIsCorrect(true);
-    } else {
-      setIsCorrect(false);
-      setIsCorrect(false);
-    }
 
-    // Delay moving to the next question to allow the user to see feedback
-    setTimeout(() => {
-      const nextQuestion = currentQuestion + 1;
-      if (nextQuestion < quizData.length) {
-        setCurrentQuestion(nextQuestion);
-        setIsCorrect(null); // Reset for the next question
-        setSelectedAnswer(""); // Reset selected answer
-      } else {
-        setShowScore(true);
-      }
-    }, 1000); // Adjust time as needed
-  };
+5. Under General configuration, view the AWS Region where your bucket will be created.
+6. Under Bucket type, choose General purpose.
+7. For Bucket name, enter a name for your bucket, i will name it `jmwebapp`
 
-  return (
-    <div className='quiz'>
-      {showScore ? (
-        <div className='score-section'>
-          You scored {score} out of {quizData.length}
-        </div>
-      ) : (
-        <>
-          <div className='question-section'>
-            <div className='question-count'>
-              <span>Question {currentQuestion + 1}</span>/{quizData.length}
-            </div>
-            <div className='question-text'>{quizData[currentQuestion].question}</div>
-          </div>
-          <div className='answer-section'>
-            {quizData[currentQuestion].options.map((option) => (
-              <button 
-                onClick={() => handleAnswerOptionClick(option)} 
-                key={option}
-                style={{ backgroundColor: selectedAnswer === option ? (isCorrect ? 'lightgreen' : 'pink') : '' }}
-              >
-                {option}
-              </button>
-            ))}
-          </div>
-          {selectedAnswer && (
-            <div style={{ marginTop: '10px' }}>
-              {isCorrect ? 'Correct! 🎉' : 'Sorry, that’s not right. 😢'}
-            </div>
-          )}
-        </>
-      )}
-    </div>
-  );
-}
+![Create-S3-bucket-S3-us-east-1 (1)(1)](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/16d52182-f605-4c69-a885-153b3dfe8ce2)
 
-export default Quiz;
-```
-</details>
+8. Scroll down and leave everything else as default and Choose Create bucket.
+
+After creating a bucket in Amazon S3, you're ready to upload an object to the bucket. An object can be any kind of file: a text file, a photo, a video, and so on. 
+
+1. In the Buckets list, choose the name of the bucket that you want to upload your object to.
+
+
+
+
