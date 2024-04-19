@@ -39,10 +39,26 @@ First, you need to create an Amazon S3 bucket where you will store your objects.
 
 8. Scroll down and leave everything else as default and Choose Create bucket.
 
+You've created a bucket in Amazon S3. 
+
 After creating a bucket in Amazon S3, you're ready to upload an object to the bucket. An object can be any kind of file: a text file, a photo, a video, and so on. 
 
 1. In the Buckets list, choose the name of the bucket that you want to upload your object to.
 
+![Screenshot 2024-04-11 at 18 29 50](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/c0ff0d6d-07bd-48d1-84cb-9df4fb391e4e)
+
+2. On the Objects tab for your bucket, choose Upload.
+
+![Screenshot 2024-04-11 at 18 30 06](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/a761de2e-4eab-446a-8343-67ae885539a0)
+
+
+3. Under Files and folders, choose Add files.
+
+4. Choose a file to upload, we are going to upload the code provided in this GitHub repo, file name: `index.html` `script.j` `style.css`, and then choose Open, and choose Upload.
+
+
+
+You've successfully uploaded an object to your bucket. 
 
 
 
