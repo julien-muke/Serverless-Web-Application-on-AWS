@@ -147,4 +147,13 @@ After you make the changes, make sure that it is deployed successfully.
 ![CloudFront-Global(2)(1)](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/96423495-ca2e-4f2d-a4c0-b6d24bc00625)
 
 
+## ➡️ Step 3 - Enable Route 53 for the CloudFront distribution
+
+We need to setup AWS Route 53, you need to have valid domain name. You can purchase one either from AWS Route 53 or other hositng provider.
+
+I have a domain name `julienmuke.cloud` form Hostinger (https://www.hostinger.com/)
+
+1. Let's Create Hosted Zone
+
+A hosted Zone one tells Route 53 how to respond to DNS queries for a domain such as example.com or julienmuke.cloud
 
