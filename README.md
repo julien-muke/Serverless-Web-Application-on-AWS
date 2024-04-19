@@ -143,8 +143,6 @@ Next, you need to copy the S3 Bucket policy, which you need to attach to your bu
 * The default root object is the oject (file name) to return when a viewer requests the URL (/) instead of a specific oject.
 
 
-
-
 ![CloudFront-Global(2)(1)](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/96423495-ca2e-4f2d-a4c0-b6d24bc00625)
 
 
