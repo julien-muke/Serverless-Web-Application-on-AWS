@@ -102,10 +102,27 @@ But for the sake of this tutorial, we'll keep it simple and not use AWS WAF, cho
 
 8. After CloudFront creates your distribution, the value of the `Status` column for your distribution will change from `Deploying` to the date and time that the distribution is deployed. If you chose to enable the distribution, it will be ready to process requests at this time. 
 
-![Screenshot 2024-04-18 at 14 43 19](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/97e93837-2b6f-4b36-921a-09fde5902db2)
+9.  Scroll down, leave everything else as default, and click "Create distribution"
+
+![Screenshot 2024-04-18 at 14 43 19](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/b20eb5d0-30f9-42aa-a2da-f2e0005703a3)
 
 
 9. When your distribution is deployed, confirm that you can access your content using your new CloudFront URL or CNAME. For more information, see Testing a distribution.
+
+
+Next, you need to copy the S3 Bucket policy, which you need to attach to your bucket so that the CloudFront can access your AWS S3 bucket: 
+
+* Back to the your distribution, click on Origin Tab, elect the origin name that you have created just and click on "Edit"
+
+![Screenshot 2024-04-18 at 14 47 25](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/b495c7dd-06e3-46b5-b310-0c32ae7611cc)
+
+
+* Scroll down until you see the CloudFront permission policy statement, just click on you know "Copy policy" button and the policy will be copied to your clipboard, you need to paste this in your Amazon S3 bucket.
+
+
+![Screenshot 2024-04-18 at 14 48 31](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/5fc36379-96df-4b72-b36e-99900248802e)
+
+
 
 
 
