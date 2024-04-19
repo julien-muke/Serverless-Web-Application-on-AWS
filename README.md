@@ -169,3 +169,12 @@ A hosted Zone one tells Route 53 how to respond to DNS queries for a domain such
 ![Route-53-Global](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/597c2b2e-dbe7-4c6e-921c-a606e6600694)
 
 
+* As you can see the NS and SOA record will be created.
+* The next thing that you need to do is copy these name servers (Route traffic) and you need to add it in your Hosting domain 
+
+![Screenshot 2024-04-18 at 15 30 31](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/1500e362-6f75-40bd-a616-c3277424f6f3)
+
+
+* Navigate to your Cpanel, search for "Manage domain" or something similar to that, then change the "DNS/Nameservers"
+
+![Screenshot 2024-04-18 at 15 32 11](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/cd49d101-fbdf-418c-8dd0-0e1d569191df)
