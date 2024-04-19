@@ -129,7 +129,23 @@ Next, you need to copy the S3 Bucket policy, which you need to attach to your bu
 ![Screenshot 2024-04-18 at 14 52 19](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/b57ba7b0-c396-49f3-85df-777a923dd6fc)
 
 
+* Then you paste the content that you have you know copied. Basically the policy code is just allowing cloudfront service principle to access your S3 bucket, then click "Save changes"
 
+
+![Edit-bucket-policy-S3-bucket-jmwebapp-S3-us-east-1](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/16438cbf-e4b4-4a2c-b604-1ef95c41bc17)
+
+
+* On the distribution console, we need to change the default root object to `index.html` because our AWS bucket contains a file called index.html and that is the entry point for our web application.
+
+![Screenshot 2024-04-18 at 15 01 01](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/f12fee38-1ac4-4290-95d2-2cf72e653308)
+
+
+* The default root object is the oject (file name) to return when a viewer requests the URL (/) instead of a specific oject.
+
+
+
+
+![CloudFront-Global(2)(1)](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/96423495-ca2e-4f2d-a4c0-b6d24bc00625)
 
 
 
