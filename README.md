@@ -164,7 +164,8 @@ A hosted Zone one tells Route 53 how to respond to DNS queries for a domain such
 
 * In the Create Hosted Zone pane, enter the name of the domain that you want to route traffic for, i'll use `julienmuke.cloud`. 
 * For Type, accept the default value of Public Hosted Zone (if its VPC only then you can select private hosted Zone).
-* Choose Create
 
 
 ![Route-53-Global](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/597c2b2e-dbe7-4c6e-921c-a606e6600694)
+
+
