@@ -230,4 +230,5 @@ Add your alternate domain names, i'll use a sub-domain `greeting.julienmuke.clou
 * Next, let create another record for our subdomain `greeting.julienmuke.cloud` 
 * Click on "Create record"
 * The record name is `greeting` .julienmuke.cloud
-* 
+* Enable "Alias"
+* Choose route traffic: "Alias to CloudFront distribution"
