@@ -249,7 +249,7 @@ NOTE: You have to wait a few minutes for the certificate to be issued.
 What happens is that the routing will be made and the records will be created for `greeting.julienmuke.cloud` 
 
 
-## ➡️ Step 4 - Let test the CloudFront 
+## ➡️ Step 4 - Test the Route 53 and the certificate for the CloudFront distribution
 
 After you complete the CloudFront configuration, you will be able to access your website using `greeting.julienmuke.cloud` copy the URL and paste it on your web browser
 
