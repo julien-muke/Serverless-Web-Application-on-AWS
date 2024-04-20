@@ -216,9 +216,10 @@ Add your alternate domain names, i'll use a sub-domain `greeting.julienmuke.clou
 
 NOTE: You have to wait a few minutes for the certificate to be issued.
 
-* Next, we need to verify the SSL certificate and complete the CloudFront settings
+* Next, to verify the SSL certificatethe, we need to select our new certificatethe we've created, complete the CloudFront settings and click "Save changes"
 
-![CloudFront-Global(2)](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/70116fc9-e8ce-4292-9d91-154be4b2c727)
+![CloudFront-Global(2)](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/c49f28df-cc05-4239-bc49-2744d9fe42f8)
+
 
 
 * Let create new record to validate the SSL/TLS certificate from Amazon.
