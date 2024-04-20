@@ -214,6 +214,7 @@ Add your alternate domain names, i'll use a sub-domain `greeting.julienmuke.clou
 
 ![Certificate-Manager-us-east-1](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/9e0029a2-159d-4d49-b7a1-bc745e70c9f0)
 
+NOTE: You have to wait a few minutes for the certificate is now issued.
 
 * Let create new record to validate the SSL/TLS certificate from Amazon.
 * Go to your AWS Certificate Manager (ACM) and click on "Create record in route 53"
@@ -225,6 +226,7 @@ Add your alternate domain names, i'll use a sub-domain `greeting.julienmuke.clou
 
 
 ![Screenshot 2024-04-18 at 15 40 58](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/3a58fa42-42a3-48ab-81b5-6623a4753596)
+
 
 
 * Next, let create another record for our subdomain `greeting.julienmuke.cloud` 
