@@ -193,7 +193,7 @@ Let see how to use your own domain name, such as www.example.com:
 
 * Update the following values: `Alternate Domain Names (CNAMEs)`
 
-Add your alternate domain names, i'll use mine `greeting.julienmuke.cloud` separate domain names with commas, or type each domain name on a new line.
+Add your alternate domain names, i'll use a sub-domain `greeting.julienmuke.cloud` separate domain names with commas, or type each domain name on a new line.
 
 
 ![CloudFront-Global(2)(2)](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/d3774de8-d1fe-4175-91cf-2fd5ccf6482e)
@@ -209,6 +209,25 @@ Add your alternate domain names, i'll use mine `greeting.julienmuke.cloud` separ
 ![Screenshot 2024-04-18 at 15 37 03](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/039483ec-0c9c-463c-8f14-19d319251463)
 
 
+* Next you need to provide a fully qualified domain name `*.julienmuke.cloud`
+* Leave everything else as default and click "Request"
+
+![Certificate-Manager-us-east-1](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/9e0029a2-159d-4d49-b7a1-bc745e70c9f0)
+
+
+* Let create new record to validate the SSL/TLS certificate from Amazon.
+* Go to your AWS Certificate Manager (ACM) and click on "Create record in route 53"
+
+![Screenshot 2024-04-18 at 15 40 30](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/7db5024c-183e-44f0-97c3-068b1e6e9804)
+
+
+* It is going to create a CNAME record in Route 53, then click on "Create record"
+
+
+![Screenshot 2024-04-18 at 15 40 58](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/3a58fa42-42a3-48ab-81b5-6623a4753596)
+
+
+* Next, let create another record for our subdomain `greeting.julienmuke.cloud` 
+* Click on "Create record"
+* The record name is `greeting` .julienmuke.cloud
 * 
-
-
