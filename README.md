@@ -240,3 +240,23 @@ NOTE: You have to wait a few minutes for the certificate to be issued.
 * The record name is `greeting` .julienmuke.cloud
 * Enable "Alias"
 * Choose route traffic: "Alias to CloudFront distribution"
+* Choose the distribution listed, it will show the CloudFront with the SSL certificate that we configured.
+* Click "Create records"
+
+
+![Screenshot 2024-04-18 at 15 49 47](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/17c85177-d074-40c9-9de4-19bfd3668bb1)
+
+What happens is that the routing will be made and the records will be created for `greeting.julienmuke.cloud` 
+
+
+## ➡️ Step 4 - Let test the CloudFront 
+
+After you complete the CloudFront configuration, you will be able to access your website using `greeting.julienmuke.cloud` copy the URL and paste it on your web browser
+
+![Screenshot 2024-04-18 at 15 50 52](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/8c1fbbc0-70d1-4814-bed8-b5938600c080)
+
+
+* Live website
+
+![Screenshot 2024-04-18 at 16 07 15](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/ad4399e1-34e9-4558-aac3-770168fd50e0)
+
