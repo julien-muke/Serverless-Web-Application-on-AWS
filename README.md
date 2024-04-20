@@ -256,7 +256,8 @@ After you complete the CloudFront configuration, you will be able to access your
 ![Screenshot 2024-04-18 at 15 50 52](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/8c1fbbc0-70d1-4814-bed8-b5938600c080)
 
 
-* Live website
+* Below is the Live website with a simple functionality, you enter your full name, click "Submit" button and it will display you full name which is stored in the S3 Bucket.
 
 ![Screenshot 2024-04-18 at 16 07 15](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/ad4399e1-34e9-4558-aac3-770168fd50e0)
 
+As you can see the website is working and the SSL Certificate is enabled.
