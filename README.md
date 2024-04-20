@@ -178,3 +178,37 @@ A hosted Zone one tells Route 53 how to respond to DNS queries for a domain such
 * Navigate to your Cpanel, search for "Manage domain" or something similar to that, then change the "DNS/Nameservers" paste the name servers from AWS Route 53 Hosted Zones.
 
 ![Screenshot 2024-04-18 at 15 32 11](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/cd49d101-fbdf-418c-8dd0-0e1d569191df)
+
+
+2. Edit CloudFront settings - by using custom URLs by adding alternate domain names.
+
+When you create a distribution, CloudFront provides a domain name for it, such as d111111abcdef8.cloudfront.net. Instead of using this provided domain name, you can use an alternate domain name (also known as a CNAME).
+
+Let see how to use your own domain name, such as www.example.com:
+
+* Back to your CloudFront console, choose the ID for the distribution that you want to update.
+* On the General tab, choose Edit.
+
+![Screenshot 2024-04-18 at 15 01 01](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/3a8050b8-5081-4b88-9bbb-3b61b1dce445)
+
+* Update the following values: `Alternate Domain Names (CNAMEs)`
+
+Add your alternate domain names, i'll use mine `greeting.julienmuke.cloud` separate domain names with commas, or type each domain name on a new line.
+
+
+![CloudFront-Global(2)(2)](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/d3774de8-d1fe-4175-91cf-2fd5ccf6482e)
+
+
+* Get an SSL/TLS certificate from an authorized certificate authority (CA) that covers the domain name. Add the certificate to your distribution to validate that you are authorized to use the domain.
+
+![Screenshot 2024-04-18 at 15 36 10](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/ca12f4d2-4258-47d5-b48d-39a26c690e4b)
+
+
+* Choose "Request a public certificate" request a public SSL/TLS certificate from Amazon. By default, public certicates are trusted by browsers and operating systems.
+
+![Screenshot 2024-04-18 at 15 37 03](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/039483ec-0c9c-463c-8f14-19d319251463)
+
+
+* 
+
+
