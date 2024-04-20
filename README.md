@@ -214,7 +214,12 @@ Add your alternate domain names, i'll use a sub-domain `greeting.julienmuke.clou
 
 ![Certificate-Manager-us-east-1](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/9e0029a2-159d-4d49-b7a1-bc745e70c9f0)
 
-NOTE: You have to wait a few minutes for the certificate is now issued.
+NOTE: You have to wait a few minutes for the certificate to be issued.
+
+* Next, we need to verify the SSL certificate and complete the CloudFront settings
+
+![CloudFront-Global(2)](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/70116fc9-e8ce-4292-9d91-154be4b2c727)
+
 
 * Let create new record to validate the SSL/TLS certificate from Amazon.
 * Go to your AWS Certificate Manager (ACM) and click on "Create record in route 53"
