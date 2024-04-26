@@ -262,5 +262,15 @@ After you complete the CloudFront configuration, you will be able to access your
 
 As you can see the website is working and the SSL Certificate is enabled.
 
-Challange: The next step is to create a DynamoDB and add views functionality using a Lambda.
-(Serverless-Web-Application-on-AWS Part 2)
+## ➡️ Step 5 - Create a DynamoDB Table 
+
+The next step is to create a DynamoDB and add views functionality on our webpage using a Lambda.
+
+To create a DynamoDB Table:
+1. Nagivate to your AWS Management Console and open the DynamoDB console
+2. Choose Create table
+3. Enter the Table details as follows:
+<br/>* For Table name, enter `serverless-web-application-on-aws`
+<br/>* For Partition key, enter `id`
+4. For Table settings, keep the default selection of Default settings.
+5. Choose Create table to create the table.
