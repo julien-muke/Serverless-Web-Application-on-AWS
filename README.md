@@ -266,6 +266,8 @@ As you can see the website is working and the SSL Certificate is enabled.
 
 The next step is to create a DynamoDB and add views functionality on our webpage using a Lambda.
 
+Feature: We have our static website, whenever someone is visiting the website the [ Views: ] counter will inscrease.
+
 To create a DynamoDB Table:
 1. Nagivate to your AWS Management Console and open the DynamoDB console
 2. Choose Create table
@@ -274,3 +276,25 @@ To create a DynamoDB Table:
 <br/>* For Partition key, enter `id`
 4. For Table settings, keep the default selection of Default settings.
 5. Choose Create table to create the table.
+
+![Screenshot 2024-04-26 at 13 12 05](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/a67f9981-c9ae-437d-8661-dc6b85192b22)
+
+6. Once the DynamoDB Table is created, click on the table name, and then click "Explore table items"
+
+![Screenshot 2024-04-24 at 15 26 33](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/6b0a34b0-ffb0-4248-a5f3-c1c38fa459a8)
+
+7. Choose "Create item"
+
+![Screenshot 2024-04-24 at 15 27 34](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/7b8b1de5-d64d-45cc-9a3c-8e09fc5c9553)
+
+
+8. You can add, remove, or edit attributes of an item:
+<br>* For id partition key, enter `0`
+<br>* Click "Add new attributes" and choose "Number"
+<br>* For attribute name, enter `views`
+<br>* For value, enter `1`
+
+![Screenshot 2024-04-24 at 15 28 59](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/e579d2ac-1a54-4ca8-b52b-8737145142a6)
+
+
+## ➡️ Step 6 - Create an IAM role
