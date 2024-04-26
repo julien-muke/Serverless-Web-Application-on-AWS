@@ -298,3 +298,48 @@ To create a DynamoDB Table:
 
 
 ## ➡️ Step 6 - Create an IAM role
+
+AWS Identity and Access Management (IAM) is a web service that helps you securely control access to AWS resources for your users. You use IAM to control who can use your AWS resources (authentication) and what resources they can use and in what ways (authorization).
+
+To create an IAM role:
+
+1. Go to the IAM Management Console, click Roles in the left nav pane, then click "Create role"
+
+![Screenshot 2024-04-24 at 15 34 04](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/828892b3-3fd7-4df8-b148-36c37d365ef5)
+
+
+2. Select type of trusted entity as `AWS service`
+3. For servise or use case, select `lambda` then click "Next"
+
+![Create-role-IAM-Global(1)](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/7de73f84-81f4-4e09-9bb7-7186b8b7006f)
+
+
+4. The Create role **Attach permissions policies** page opens with options for creating a new policy, refreshing the page, and searching existing policies named `AmazonDynamoDBFullAccess` and click "Next"
+
+
+![Screenshot 2024-04-24 at 15 43 12](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/ab749afa-8680-4c11-8849-3b407e949e46)
+
+
+5. For the role name, enter `serverless-web-application-on-aws`
+6. Scroll and click "Create role"
+
+
+![Create-role-IAM-Global(2)(1)](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/1b00b2b6-6bc9-453c-a8fb-491fdb7257f2)
+
+
+## ➡️ Step 7 - Create a Lambda function 
+
+To create a Lambda function with the console:
+
+1. Open the Functions page of the Lambda console
+2. Choose Create function
+3. Select Author from scratch
+4. In the Basic information pane, for Function name enter `serverless-web-application-on-aws`
+5. For Runtime, choose Python 3.8
+6. Click on Advance settings, and select "Enable function URL" (This is to use function URLs to assign HTTP endpoints to your Lambda function).
+7. For Auth type select "None"
+You are allowing Lambda won't perform IIM authentication on request to your function URL basically the URL endpoint will be public.
+8. Select Cross Origin Ratio Sharing (CORS) so that only the website that starts with `julienmuke.cloud` can access this particular Lambda function.
+8. Leave architecture set to x86_64 and choose "Create function"
+
+
