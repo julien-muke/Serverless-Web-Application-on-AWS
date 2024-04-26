@@ -377,4 +377,9 @@ def lambda_handler(event, context):
 ![Screenshot 2024-04-24 at 16 12 13](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/402abe6d-1485-4242-adf9-5a5df54474a8)
 
 
+11. Next, we've created an IAM role, now let's attache the IAM role to this Lambda function.
+<br>*   
+
+![Screenshot 2024-04-24 at 16 08 32](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/e5ffcc02-1df6-44c7-9ffa-436d97d378c9)
+
 
