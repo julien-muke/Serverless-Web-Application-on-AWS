@@ -340,6 +340,41 @@ To create a Lambda function with the console:
 7. For Auth type select "None"
 You are allowing Lambda won't perform IIM authentication on request to your function URL basically the URL endpoint will be public.
 8. Select Cross Origin Ratio Sharing (CORS) so that only the website that starts with `julienmuke.cloud` can access this particular Lambda function.
-8. Leave architecture set to x86_64 and choose "Create function"
+9. Leave architecture set to x86_64 and choose "Create function"
+
+![Create-function-Lambda(1)](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/b2291fe1-27aa-44a9-873f-6d3ddbfafe23)
+
+
+10. Modify the code in the console:
+
+<br>*   Choose the Code tab: In the console's built-in code editor, you should see the function code that Lambda created. If you don't see the lambda_function.py tab in the code editor, select lambda_function.py in the file explorer as shown on the image below.
+<br>*  Paste the following code into the lambda_function.py tab, replacing the code that Lambda created.
+<br>*  Then click "Deploy"
+
+```python
+import json
+import boto3
+dynamodb = boto3.resource('dynamodb')
+table = dynamodb.Table('serverless-web-application-on-aws')
+def lambda_handler(event, context):
+    response = table.get_item(Key={
+        'id':'0'
+    })
+    views = response['Item']['views']
+    views = views + 1
+    
+    print(views)
+    
+    response = table.put_item(Item={
+        'id':'0',
+        'views': views
+    })
+    
+    return views
+
+```
+
+![Screenshot 2024-04-24 at 16 12 13](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/402abe6d-1485-4242-adf9-5a5df54474a8)
+
 
 
