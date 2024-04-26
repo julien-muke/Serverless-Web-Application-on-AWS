@@ -391,9 +391,13 @@ def lambda_handler(event, context):
 13. Let test our lambda function:
 <br>*   Click "Deploy" and then "Test"
 <br>*   For configure test event, enter `TestEvent` and click "Save"
-<br>*   The response will update to 2 and our initial views in DynamoDB was 1
+<br>*   The response will update to 2 and 
 
 ![Screenshot 2024-04-24 at 16 14 30](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/86ff7a1a-96c8-4c7a-b6d8-4d6965623ea3)
+
+If you check our DynamoDB table and refesh the table, the value of views will update to 2 as well.
+
+![Screenshot 2024-04-24 at 16 15 07](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/b3764ee9-0ace-4d3b-8c61-5188d490bd38)
 
 
 
