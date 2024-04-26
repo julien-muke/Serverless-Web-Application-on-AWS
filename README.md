@@ -388,5 +388,15 @@ def lambda_handler(event, context):
 
 ![Edit-basic-settings-serverless-web-application-on-aws-Lambda](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/af46a797-eb56-4e98-946a-90655c6e6a1e)
 
+13. Let test our lambda function:
+<br>*   Click "Deploy" and then "Test"
+<br>*   For configure test event, enter `TestEvent` and click "Save"
+<br>*   The response will update to 2 and our initial views in DynamoDB was 1
+
+![Screenshot 2024-04-24 at 16 14 30](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/86ff7a1a-96c8-4c7a-b6d8-4d6965623ea3)
+
+
+
+
 
 
