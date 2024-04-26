@@ -378,8 +378,15 @@ def lambda_handler(event, context):
 
 
 11. Next, we've created an IAM role, now let's attache the IAM role to this Lambda function.
-<br>*   
+<br>*   Select the permission tab
+<br>*   Click "Edit"
 
 ![Screenshot 2024-04-24 at 16 08 32](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/e5ffcc02-1df6-44c7-9ffa-436d97d378c9)
+
+
+12. Srolll down to "Execution role" and select the lambda function we've created and click "Save"
+
+![Edit-basic-settings-serverless-web-application-on-aws-Lambda](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/af46a797-eb56-4e98-946a-90655c6e6a1e)
+
 
 
