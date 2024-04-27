@@ -402,10 +402,36 @@ If you check our DynamoDB table and refesh the table, the value of views will up
 
 * Next, we will edit the script.js file so that the views counter will display on the webpage, to do that:
 
-<br>-  Go to your script.js file, open it in code editor of your choice
+<br>-  Create a script.js file, open it in code editor of your choice (VS Code) copy and paste the code below:
+
+```javascript
+const form = document.querySelector('form');
+const greeting = document.querySelector('#greeting');
+
+form.addEventListener('submit', (event) => {
+	event.preventDefault();
+	const name = document.querySelector('#name').value;
+	greeting.textContent = `Hello, ${name}!`;
+});
+
+const counter = document.querySelector(".counter-number");
+async function updateCounter() {
+    let response = await fetch(
+        "YOUR-FUNCTION-URL"
+    );
+    let data = await response.json();
+    counter.innerHTML = `Views: ${data}`;
+}
+updateCounter();
+
+```
 <br>-  Go to your Lambda function, copy your function URL
 
 ![Screenshot 2024-04-24 at 16 51 09](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/6a918fdc-a447-428e-abb1-54938f65f162)
+
+<br>- Paste the ULR to the JavaScript `counter-number` as shown in image below:
+
+
 
 
 
