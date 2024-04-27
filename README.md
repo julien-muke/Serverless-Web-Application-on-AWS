@@ -434,7 +434,18 @@ updateCounter();
 ![Screenshot 2024-04-27 at 12 56 48](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/ab58bbc0-fe5b-400a-821a-0bf001ec2bfd)
 
 
+* Next, save the changes, now you need the upload the script.js file once again into your S3 Bucket (see step 1.2 above)
 
+NOTE: it will take time to process, be patient and take a pause and come back later to test the application.
+
+🏆 As you can see below, the views counter will increase everytime you refresh the page, it will also increase in your DynamoDB table.
+
+![Screenshot 2024-04-25 at 15 43 50](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/9210dfb0-4edb-457b-b413-11c4849d6b04)
+
+
+## 💰 Cost
+
+All services used are eligible for the AWS Free Tier. However, charges will incur at some point so it's recommended that you shut down resources after completing this tutorial.
 
 
 
