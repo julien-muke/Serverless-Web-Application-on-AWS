@@ -400,6 +400,17 @@ If you check our DynamoDB table and refesh the table, the value of views will up
 ![Screenshot 2024-04-24 at 16 15 07](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/b3764ee9-0ace-4d3b-8c61-5188d490bd38)
 
 
+* Next, we will edit the script.js file so that the views counter will display on the webpage, to do that:
+
+<br>-  Go to your script.js file, open it in code editor of your choice
+<br>-  Go to your Lambda function, copy your function URL
+
+![Screenshot 2024-04-24 at 16 51 09](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/6a918fdc-a447-428e-abb1-54938f65f162)
+
+
+
+
+
 
 
 
