@@ -431,6 +431,7 @@ updateCounter();
 
 <br>- Paste the ULR to the JavaScript `counter-number` as shown in image below:
 
+![Screenshot 2024-04-27 at 12 56 48](https://github.com/julien-muke/Serverless-Web-Application-on-AWS/assets/110755734/ab58bbc0-fe5b-400a-821a-0bf001ec2bfd)
 
 
 
